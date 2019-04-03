@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int funSoma(int a, int b){
+
+    return (a + b);
+}
+int funSubtracao(int a , int b){
+
+    return (a -b);
+}
+
+int main()
+{
+
+    char n;
+    int a,b;
+
+    printf("informe a operacao desejada :"
+           "\n a ) soma"
+           "\n b ) subtracao \n");
+           scanf("%c", &n);
+
+
+    switch(n){
+    case 'a':
+        printf("Informe a: \n");
+        scanf("%d", &a);
+        printf("INforme b : \n");
+        scanf("%d", &b);
+        printf("a + b : %d",funSoma(a,b));
+        break;
+    case 'b':
+        printf("Informe a : \n");
+        scanf("%d", &a);
+        printf("Informe b: \n");
+        scanf("%d", &b);
+        printf("a - b : %d",funSubtracao(a,b));
+        break;
+    default:
+        printf("T-T sorry");
+        break;
+
+    }
+    return 0;
+
+
+}
+
+
