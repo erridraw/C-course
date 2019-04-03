@@ -1,0 +1,30 @@
+//Programa para calcular n medias
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    int n;
+    float media, m, i;
+    float contador = 0;
+
+    printf ("informe a quantidade de notas n : \n");
+    scanf("%d", &n);
+
+    for (i = 1 ;i <= n; i++){
+
+        printf("Informe as notas m :\n");
+        scanf("%f", &m);
+
+
+        contador += m;
+    }
+    media = contador/n;
+
+    printf("A media das notas eh :   %.3f   ",media);
+
+    return 0;
+
+
+}
