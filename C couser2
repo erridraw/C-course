@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+int main()
+{
+
+    int x,i = 1;
+    int n,raiz;
+
+    do{
+        printf("Infome um numero natural x: \n");
+        scanf("%d", &x);
+        i++;
+        raiz = sqrt(x);
+        printf("a raiz quadrada do numero eh : %d \n",raiz);
+
+        printf("Deseja repetir a operacao tecle 1 para ss ");
+        scanf("%d", &n);
+
+    }while(n == 1);
+
+    return 0;
+
+
+}
+
