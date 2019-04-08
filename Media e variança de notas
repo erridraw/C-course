@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include<math.h>
+int main () {
+
+    int n,i;
+    float media = 0;
+    float variancia = 0;
+
+    //Informe o numero de notas desejadas
+
+    printf("Informe as n notas :            ");
+    scanf("%d", &n);
+
+    float notas[n];
+    
+    //Calculo da media
+    
+    for (i = 0; i < n ; i++){
+
+        //Informe as notas
+
+        printf("Informe a notas de numero %d :            ", i);
+        scanf("%f", &notas[i]);
+
+        media = media + notas[i];
+    }
+     for (i = 0; i < n ; i++){
+
+         printf("\n Nota %d eh %.3f \n",i,notas[i]);
+     }
+    
+    media = media/n;
+    
+    //Calculo da variaça
+    
+    for (i = 0;i < n; i++){
+        variancia = variancia + pow((notas[i] - media),2)/n;
+    }
+    
+    //Imprimir resultados
+    
+    printf("\n \n A media eh : %.2f  e a variancia eh : %.2f", media,variancia);
+
+    return 0;
+}
