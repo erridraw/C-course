@@ -5,6 +5,7 @@ int main () {
     int n,i;
     float media = 0;
     float variancia = 0;
+    float desvioPadrao;
 
     //Informe o numero de notas desejadas
 
@@ -37,9 +38,13 @@ int main () {
         variancia = variancia + pow((notas[i] - media),2)/n;
     }
     
+    // Calculo do desvio padrao
+    
+    desvioPadrao = sqrt(variancia);
+    
     //Imprimir resultados
     
-    printf("\n \n A media eh : %.2f  e a variancia eh : %.2f", media,variancia);
+    printf("\n \n A media eh : %.2f \n A variancia eh : %.2f \n O desvio padrao eh : %.2f", media,variancia,desvioPadrao);
 
     return 0;
 }
