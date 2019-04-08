@@ -14,7 +14,7 @@ int main()
         raiz = sqrt(x);
         printf("a raiz quadrada do numero eh : %d \n",raiz);
 
-        printf("Deseja repetir a operacao tecle 1 para ss ");
+        printf("Se deseja repetir a operacao tecle 1 para ss ");
         scanf("%d", &n);
 
     }while(n == 1);
