@@ -1,0 +1,44 @@
+# include <iostream>
+using namespace std;
+    struct Aluno{
+        char semestre[20];
+        char nome[100];
+        int matricula;
+        float nota;
+    }
+int main (void) 
+{
+    
+    int incremento,quantidade = qnt;
+    char nomes[qnt],semestres[qnt];
+    int matriculas[qnt];
+    float notas[qnt];
+    
+    cout << "Informe a quantidade de alunos : ";
+    cin >> quantidade;
+    
+    struct Aluno ln[quantidade];
+    
+    for ( incremento = 0 ; incremento < quantidade ; incremento++ )
+    {
+        cout << "Informe o semestre do aluno : ";
+        gets(ln.semestre);
+        cout << "Informe o numero de matricula do aluno : ";
+        cin >> ln.matricula;
+        cout << "Informe o nome do estudade : ";
+        gets(ln.nome);
+        cout << "Informe a nota desse estudante : ";
+        cin >> ln.nota;
+    }
+    
+    nomes[qnt] = ln.nome;
+    matriculas[qnt] = ln.matricula;
+    semestres[qnt] = ln.semestre;
+    notas[qnt] = ln.notas;
+    
+    for ( incremento = 0 ; incremento < quantidade ; incremento++ )
+    {
+        cout << "\t\n Semestres : " << semestres << "\t Matriculas : " << matriculas << "\t Nomes : " << nomes << "\t Notas : "<< notas;
+    }
+    return 0;
+}
